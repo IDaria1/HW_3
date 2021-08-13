@@ -44,6 +44,7 @@ public class Array {
         deletefruits.remove(6);
         System.out.println(deletefruits);
     }
+
     public static void hw3() {
         ArrayList<String> colour = new ArrayList<>();
         colour.add("Красный");
@@ -52,6 +53,7 @@ public class Array {
         colour.add("Зеленый");
         System.out.println(colour.indexOf("Желтый"));
     }
+
     public static void hw4() {
         ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1, 5, 9, 4, 11, 26, 14, 78));
         System.out.println(numbers);
@@ -115,12 +117,4 @@ public class Array {
         System.out.println(different);
 
     }
-//    public static void hw6() {
-
-//
-//    public static void hw7() {
-//        ArrayList<String> lists = new ArrayList<>(Arrays.asList("Персик", "Яблоко", "Дыня", "Арбуз", "Абрикос", "Огурец", "Свекла", "Лук"));
-//        Collections.sort(lists);
-//        System.out.println(lists);
-//    }
 }
