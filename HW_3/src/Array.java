@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Collections;
 
 public class Array {
     public static void main(String[] args) {
@@ -7,8 +8,8 @@ public class Array {
         hw3();
         hw4();
         hw5();
-//        hw6();
-//        hw7();
+        hw6();
+        hw7();
     }
 
     public static void hw1() {
@@ -27,15 +28,6 @@ public class Array {
     }
 
     public static void hw2() {
-        ArrayList<String> colour = new ArrayList<>();
-        colour.add("Желтый");
-        colour.add("Синий");
-        colour.add("Красный");
-        colour.add("Зеленый");
-        System.out.println(colour.indexOf("Желтый"));
-    }
-
-    public static void hw3() {
         ArrayList<String> deletefruits = new ArrayList<>();
         deletefruits.add("Банан");
         deletefruits.add("Персик");
@@ -52,8 +44,41 @@ public class Array {
         deletefruits.remove(6);
         System.out.println(deletefruits);
     }
-
+    public static void hw3() {
+        ArrayList<String> colour = new ArrayList<>();
+        colour.add("Красный");
+        colour.add("Синий");
+        colour.add("Желтый");
+        colour.add("Зеленый");
+        System.out.println(colour.indexOf("Желтый"));
+    }
     public static void hw4() {
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1, 5, 9, 4, 11, 26, 14, 78));
+        System.out.println(numbers);
+        System.out.println("min " + Collections.min(numbers));
+        System.out.println("max " + Collections.max(numbers));
+        Collections.sort(numbers);
+        System.out.println("sort " + numbers);
+        Collections.sort(numbers, Collections.reverseOrder());
+        System.out.println("reverse sort " + numbers);
+        Collections.shuffle(numbers);
+        System.out.println("mix " + numbers);
+    }
+
+    public static void hw5() {
+        ArrayList<String> vegetables = new ArrayList<>();
+        vegetables.add("Редиска");
+        vegetables.add("Картошка");
+        vegetables.add("Тыква");
+        vegetables.add("Огурец");
+        vegetables.add("Помидор");
+        System.out.println(vegetables);
+        vegetables.set(1, "Помидор");
+        vegetables.set(4, "Картошка");
+        System.out.println(vegetables);
+    }
+
+    public static void hw6() {
         ArrayList<String> lists1 = new ArrayList<>();
         lists1.add("Редиска");
         lists1.add("Перец");
@@ -75,7 +100,7 @@ public class Array {
         System.out.println(lists3);
     }
 
-    public static void hw5() {
+    public static void hw7() {
         Collection<String> lists1 = Arrays.asList("Персик", "Яблоко", "Дыня", "Арбуз", "Абрикос");
         Collection<String> lists2 = Arrays.asList("Персик", "Помидор", "Абрикос", "Свекла", "Лук");
 
@@ -91,16 +116,7 @@ public class Array {
 
     }
 //    public static void hw6() {
-//        ArrayList<String> vegetables = new ArrayList<>();
-//        vegetables.add("Редиска");
-//        vegetables.add("Картошка");
-//        vegetables.add("Тыква");
-//        vegetables.add("Огурец");
-//        vegetables.add("Помидор");
-//        System.out.println(vegetables);
-//        vegetables.set(indexOf"Помидор");
-//
-//    }
+
 //
 //    public static void hw7() {
 //        ArrayList<String> lists = new ArrayList<>(Arrays.asList("Персик", "Яблоко", "Дыня", "Арбуз", "Абрикос", "Огурец", "Свекла", "Лук"));
