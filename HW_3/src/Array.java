@@ -13,7 +13,7 @@ public class Array {
     }
 
     public static void hw1() {
-        ArrayList<String> Fruits = new ArrayList<String>();
+        ArrayList<String> Fruits = new ArrayList<>();
         Fruits.add("Банан");
         Fruits.add("Персик");
         Fruits.add("Яблоко");
@@ -28,21 +28,21 @@ public class Array {
     }
 
     public static void hw2() {
-        ArrayList<String> deletefruits = new ArrayList<>();
-        deletefruits.add("Банан");
-        deletefruits.add("Персик");
-        deletefruits.add("Яблоко");
-        deletefruits.add("Дыня");
-        deletefruits.add("Арбуз");
-        deletefruits.add("Абрикос");
-        deletefruits.add("Огурец");
-        deletefruits.add("Свекла");
-        deletefruits.add("Лук");
-        System.out.println(deletefruits);
-        deletefruits.remove(0);
-        deletefruits.remove(3);
-        deletefruits.remove(6);
-        System.out.println(deletefruits);
+        ArrayList<String> DeleteFruits = new ArrayList<>();
+        DeleteFruits.add("Банан");
+        DeleteFruits.add("Персик");
+        DeleteFruits.add("Яблоко");
+        DeleteFruits.add("Дыня");
+        DeleteFruits.add("Арбуз");
+        DeleteFruits.add("Абрикос");
+        DeleteFruits.add("Огурец");
+        DeleteFruits.add("Свекла");
+        DeleteFruits.add("Лук");
+        System.out.println(DeleteFruits);
+        DeleteFruits.remove(0);
+        DeleteFruits.remove(3);
+        DeleteFruits.remove(6);
+        System.out.println(DeleteFruits);
     }
 
     public static void hw3() {
